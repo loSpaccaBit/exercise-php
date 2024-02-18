@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITI Assicurazioni</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <header id="navbar">
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="./src/visualizza.php">Visualizza Clienti</a></li>
+                <li><a href="./src/registraIncidente.html">Incidenti</a></li>
+                </ol>
+        </nav>
+    </header>
+
+    <div id="registrazione">
+        <form action="/backend/main.php" method="post">
+            <fieldset id="utente">
+                <legend>Utente</legend>
+                <ol>
+                    <li>
+                        <label for="codice fiscale">Codice Fiscale</label>
+                        <input type="text" name="codice-fiscale" id="codice-fiscale" placeholder="RSSMRA80A01F205X">
+                    </li>
+                    <li>
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Mario">
+                    </li>
+                    <li>
+                        <label for="cogome">Cognome</label>
+                        <input type="text" name="cognome" id="cognome" placeholder="Rossi">
+                    </li>
+                </ol>
+            </fieldset>
+            <fieldset id="auto">
+                <legend>Auto</legend>
+                <ol>
+                    <li>
+                        <label for="targa">Targa</label>
+                        <input type="text" name="targa" id="targa" placeholder="AA 000 XX">
+                    </li>
+                    <li>
+                        <label for="modello">Modello</label>
+                        <input type="text" name="modello" id="modello">
+                    </li>
+                    <li>
+                        <label for="marca">Marca</label>
+                        <input type="text" name="marca" id="marca">
+                    </li>
+                    <li>
+                        <button type="submit">Invia</button>
+                    </li>
+                </ol>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+body{
+    width: 1080px;
+    margin: 18px auto;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li{
+    line-height: 22px;
+}
+
+header#navbar{
+    width: 100%;
+}
+
+header#navbar nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar nav ul li{
+    padding: 0;
+    margin: 0 22px 0 0;
+    display: inline;
+}
+
+#registrazione{
+    margin: 18px 512px;
+}
+
+fieldset{
+width: 400px;
+border-radius: 2%;
+}
+
+fieldset ol{
+    list-style: none;
+    padding: 0;
+    margin: 3px;
+}
+
+fieldset ol li{
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+fieldset input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+fieldset button{
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    margin:  4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}

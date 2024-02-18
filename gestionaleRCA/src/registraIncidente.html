@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registra Incidente</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <style>
+        #registrazione,
+        #incidente {
+            margin: 18px;
+            float: left;
+            width: calc(50% - 36px);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ol>
+                <li>
+                    <button><a href="../backend/incidenti.php">Visualizza Incidenti</a></button>
+                    <button><a href="../backend/perizia.php">Visualizza Perizie</a></button>
+                </li>
+            </ol>
+        </nav>
+    </header>
+    <div id="registrazione">
+        <form action="/backend/registraPerizia.php" method="post">
+            <fieldset id="utente">
+                <legend>Perizia</legend>
+                <ol>
+                    <li>
+                        <label for="Targa">Targa</label>
+                        <input type="text" name="targa" id="targa" placeholder="AA 000 XX">
+                    </li>
+                    <li>
+                        <label for="costoDanno">Costo Danno</label>
+                        <input type="number" name="costo_danno" id="costo_danno">
+                    </li>
+                    <li>
+                        <label for="percentualeDanno">Percentuale Danno</label>
+                        <input type="number" name="percentuale_danno" id="percentuale_danno">
+                    </li>
+                    <li>
+                        <button type="submit">Invia</button>
+                    </li>
+                </ol>
+            </fieldset>
+        </form>
+    </div>
+
+    <div>
+        <form action="../backend/registraIncidente.php" method="post">
+            <fieldset id="Incidente">
+                <legend>Incidente</legend>
+                <ol>
+                    <li>
+                        <label for="cod_perizia1">Codice perizia</label>
+                        <input type="number" name="id_perizia_1" id="id_perizia_1">
+                    </li>
+                    <li>
+                        <label for="cod_perizia2">Codice perizia</label>
+                        <input type="number" name="id_perizia_2" id="id_perizia_2">
+                    </li>
+                    <li>
+                        <button type="submit">Invia</button>
+                    </li>
+                </ol>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
