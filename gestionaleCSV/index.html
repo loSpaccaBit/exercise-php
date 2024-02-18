@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionale</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h1 class="display-4">Gestionale</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form action="./server/main.php" method="post" enctype="multipart/form-data" class="bg-light p-4 rounded shadow">
+                    <div class="mb-3">
+                        <label for="nameDb" class="form-label">Nome del Database</label>
+                        <input type="text" class="form-control" name="nameDb" id="nameDb" placeholder="Meteo">
+                        <small class="text-muted">*NB di default il nome è Meteo</small>
+                    </div>
+                    <div class="mb-3">
+                        <label for="nameStazione" class="form-label">Nome Tabella Stazioni</label>
+                        <input type="text" class="form-control" name="nameStazione" id="nameStazione" placeholder="Stazione">
+                        <small class="text-muted">*NB di default il nome è Stazione</small>
+                    </div>
+                    <div class="mb-3">
+                        <label for="nameMisurazioni" class="form-label">Nome Tabella Misurazioni</label>
+                        <input type="text" class="form-control" name="nameMisurazioni" id="nameMisurazioni" placeholder="Misurazioni">
+                        <small class="text-muted">*NB di default il nome è Misurazioni</small>
+                    </div>
+                    <div class="mb-3">
+                        <label for="fileToUpload" class="form-label">Carica File CSV</label>
+                        <input type="file" class="form-control" name="fileToUpload" id="fileToUpload" required accept=".csv">
+                    </div>
+                    <button type="submit" name="submit" value="submit" class="btn btn-primary">Invia</button>
+                </form>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-6 text-center">
+                <a href="./src/visualizza.php" class="btn btn-secondary">Visualizza DB</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
